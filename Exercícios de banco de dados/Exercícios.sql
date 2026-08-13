@@ -28,3 +28,11 @@ select * from clientes order by nome asc limit 10;
 #Exercício 10
 select nome, cidade, idade from clientes
 where cidade = 'Rio de Janeiro' order by idade desc limit 5;
+
+#Exercício 11
+select * from clientes 
+where cidade like 'São Paulo';
+
+#Exercício 12
+select * from clientes 
+where idade = 28;
