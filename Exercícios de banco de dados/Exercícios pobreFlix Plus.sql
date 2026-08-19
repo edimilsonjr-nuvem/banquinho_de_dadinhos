@@ -13,7 +13,7 @@ where tipo = 'Filme' and genero like '%Ficção Cientifica%';
 
 -- Quais séries (tipo = 'Série') do gênero 'Crime, Drama' estão no catálogo?
 select * from midias
-where tipo = 'Série' and genero like '%Crime, Drama%';
+where tipo = 'Série' and genero like 'Crime, Drama';
 
 -- Liste todas as mídias que começam com "O Senhor dos" no titulo.
 select * from midias
@@ -21,7 +21,7 @@ where titulo like 'O Senhor dos%';
 
 -- Liste todos os filmes lançados antes de 1990.
 select * from midias
-where ano_lancamento < 1990;
+where genero = 'filme' and ano_lancamento < 1990;
 
 					#Atualização (UPDATE)
                     
